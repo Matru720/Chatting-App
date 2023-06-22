@@ -14,164 +14,74 @@
         android:orientation="vertical"
         android:gravity="center_horizontal"
         android:background="@drawable/bt_shape">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clayout"
-            android:layout_marginTop="60dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/outer_circle"
-                android:contentDescription="outer circle"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintBottom_toBottomOf="@id/clayout">
-            </ImageView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/inner_circle"
-                android:contentDescription="outer circle"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintBottom_toBottomOf="@id/clayout">
-            </ImageView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/center_ppl"
-                android:contentDescription="outer circle"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintBottom_toBottomOf="@id/clayout">
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="outer circle"
-                android:src="@drawable/ppl_1"
-                app:layout_constraintBottom_toBottomOf="@id/clayout"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintHorizontal_bias="0.234"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintVertical_bias="0.931">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="outer circle"
-                android:src="@drawable/ppl_2"
-                app:layout_constraintBottom_toBottomOf="@id/clayout"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintHorizontal_bias="0.637"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintVertical_bias="0.76">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ppl_3"
-                app:layout_constraintBottom_toBottomOf="@id/clayout"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintHorizontal_bias="0.897"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintVertical_bias="0.709">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ppl_4"
-                app:layout_constraintBottom_toBottomOf="@id/clayout"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintHorizontal_bias="0.746"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintVertical_bias="0.04">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ppl_5"
-                app:layout_constraintBottom_toBottomOf="@id/clayout"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintHorizontal_bias="0.283"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintVertical_bias="0.384">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ppl_6"
-                app:layout_constraintBottom_toBottomOf="@id/clayout"
-                app:layout_constraintEnd_toEndOf="@id/clayout"
-                app:layout_constraintHorizontal_bias="0.199"
-                app:layout_constraintStart_toStartOf="@id/clayout"
-                app:layout_constraintTop_toTopOf="@id/clayout"
-                app:layout_constraintVertical_bias="0.156">
-
-            </ImageView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Speak With World"
-                android:paddingStart="50dp"
-                android:paddingEnd="50dp"
-                android:textColor="@color/white"
-                android:textSize="40dp"
-                android:textStyle="bold" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:lottie_rawRes="@raw/letschat"
+                android:layout_marginTop="100dp"
+                app:lottie_loop="true"/>
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
 
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Get Started"
-                android:background="@drawable/et_shape"
-                app:backgroundTint="@color/gradient_color2"
-                android:id="@+id/btn_get_started"
-                android:elevation="1dp"
-                android:layout_marginStart="80dp"
-                android:layout_marginEnd="80dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="50dp"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold"
-                >
-            </Button>
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/cs"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/getstarted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chat With Friends"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="50dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Talk Connects Us With A chain Of Bonds"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:layout_margin="50dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Started"
+                    android:background="@drawable/et_shape"
+                    app:backgroundTint="@color/gradient_color1"
+                    android:id="@+id/btn_get_started"
+                    android:elevation="1dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="50dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    >
+                </Button>
+
+
+
+            </LinearLayout>
+
 
 
         </LinearLayout>

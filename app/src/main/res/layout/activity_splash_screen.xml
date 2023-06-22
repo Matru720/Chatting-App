@@ -21,14 +21,15 @@
 
 
     <TextView
+        android:id="@+id/appearance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"
         android:text="Chatting App"
-        android:layout_marginTop="100dp"
-        android:gravity="center"
-        android:textStyle="bold"
         android:textAlignment="center"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:textStyle="bold" />
 </LinearLayout>
 
 
